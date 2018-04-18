@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:datosPersonales"
+             x:Class="datosPersonales.MainPage">
+
+    <StackLayout>
+        <BoxView x:Name="BoxColor"
+                 BackgroundColor="Azure"
+                 HeightRequest="100">
+
+        </BoxView>
+
+        <StackLayout BackgroundColor="Black"
+                     HeightRequest="120">
+
+            <Image Source="icon.png"
+                   HeightRequest="110"
+                   WidthRequest="110"/>
+
+        </StackLayout>
+
+        <Label Text="Nombre de Usuario" 
+               Margin="90, 30, 0, 0" 
+               TextColor="Violet"
+               FontSize="Large">
+
+        </Label>
+
+        <TableView>
+
+            <TableSection Title="Usuario">
+
+                <EntryCell Label="Edad"
+                           Placeholder="Ingrese la edad">
+
+                </EntryCell>
+
+                <EntryCell Label="Intereses"
+                           Placeholder="Ingrese sus intereses">
+
+                </EntryCell>
+
+                <EntryCell Label="Aprende"
+                           Placeholder="Xamarin Forms, ASP.NET">
+
+                </EntryCell>
+
+                <EntryCell Label="Otro"
+                           Placeholder="Ingrese otro">
+
+                </EntryCell>
+
+            </TableSection>
+
+        </TableView>
+
+    </StackLayout>
+
+</ContentPage>
